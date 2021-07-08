@@ -8,15 +8,12 @@ const stuffRoutes = require("./routes/stuff");
 const userRoutes = require("./routes/user");
 
 // Connection de l'API à la bdd mongoDB que l'on a créée
-// .serve dans gitignore
-// .connect(process.env.MONGO_DB,
-// MDP : 8n3Cvr6cpfStNtlh
-// USER : openclassrooms1
+
 mongoose
-  .connect(
-    "mongodb+srv://openclassrooms1:8n3Cvr6cpfStNtlh@cluster0.z4qip.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
+  .connect(process.env.MONGO_DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("Connexion à MongoDB réussie !"))
   .catch(() => console.log("Connexion à MongoDB échouée !"));
 
