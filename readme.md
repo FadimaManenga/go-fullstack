@@ -47,7 +47,8 @@ Veillez à avoir toujours un terminal qui exécute `ng serve`
 5. `git init` 
    > initialise un repos gitHub
 6. Créer un fichier `.gitignore`, comprenant `node_modules`
-   > initialise un ignore sur git de node module
+   > initialise un `.gitignore` sur git de node module
+   > mdp + user ?
 7. Créer un fichier `server.js` : code du serveur.
    > Pour afficher les logs dans le terminal `node server`   
    > Pour fermer le server `Ctrl+c`
@@ -70,4 +71,12 @@ Veillez à avoir toujours un terminal qui exécute `ng serve`
 15. Configurez le **middleware** de gestion des fichiers
     > `npm install --save multer`
 
+***
+## Archi
 
+|      dossier backend 	    |
+|-----------------	|---	|
+|                 	|   	|
+|                 	|   	|
+|                 	|   	|
+|                 	|   	|
