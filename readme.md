@@ -74,9 +74,28 @@ Veillez à avoir toujours un terminal qui exécute `ng serve`
 ***
 ## Archi
 
-|      dossier backend 	    |
-|-----------------	|---	|
-|                 	|   	|
-|                 	|   	|
-|                 	|   	|
-|                 	|   	|
+|    APIs    	|    are Cool    	|                                         ARCHITECTURE                                         	|   	|
+|:----------:	|:--------------:	|:--------------------------------------------------------------------------------------------:	|---	|
+|            	|   go-fullstack 	| dans Visual Studio Code                                                                      	|   	|
+|            	|                	|                                                                                              	|   	|
+|   backend  	| ./controllers  	| stuff.js                                                                                     	|   	|
+|            	|                	| user.js                                                                                      	|   	|
+|            	|                	|                                                                                              	|   	|
+|            	| ./middleware   	| auth.js                                                                                      	|   	|
+|            	|                	| multer-config.js                                                                             	|   	|
+|            	|                	|                                                                                              	|   	|
+|            	| ./models       	| Thing.js                                                                                     	|   	|
+|            	|                	| User.js                                                                                      	|   	|
+|            	|                	|                                                                                              	|   	|
+|            	| ./routes       	| stuff.js                                                                                     	|   	|
+|            	|                	| user.js                                                                                      	|   	|
+|            	|                	|                                                                                              	|   	|
+|            	| ./server.js    	|                                                                                              	|   	|
+|            	| ./app.js       	|                                                                                              	|   	|
+|            	|                	|                                                                                              	|   	|
+|            	| ./package.json 	| utilisé pour gérer les dépendances  du projet, les scripts, la version  et bien plus encore. 	|   	|
+|            	| ./node_modules 	| contient toutes les dépendances  installées pour le projet                                   	|   	|
+|            	| ./.gitignore   	| fichiers non suivis  que Git devrait ignorer                                                 	|   	|
+|            	| ./readme.md    	| docs - instructions                                                                          	|   	|
+| ---        	| ---            	| ---                                                                                          	|   	|
+| ./frontend 	|                	|                                                                                              	|   	|
