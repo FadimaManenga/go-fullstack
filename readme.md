@@ -74,4 +74,4 @@ Veillez à avoir toujours un terminal qui exécute `ng serve`
 ***
 ## Archi
 
-LIRE LE PDF [archi API](../backend/gofullstack.pdf)
+LIRE LE PDF [archi API](gofullstack.pdf)

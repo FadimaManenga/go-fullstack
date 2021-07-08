@@ -8,6 +8,7 @@ const stuffRoutes = require("./routes/stuff");
 const userRoutes = require("./routes/user");
 
 // Connection de l'API à la bdd mongoDB que l'on a créée
+// .serve dans gitignore
 // .connect(process.env.MONGO_DB,
 // MDP : 8n3Cvr6cpfStNtlh
 // USER : openclassrooms1
@@ -47,5 +48,5 @@ app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/api/stuff", stuffRoutes);
 app.use("/api/auth", userRoutes);
 
-// Exportation de l'app pour utilisation par d'autres fichiers, nottament le serveur Node.
+// Exportation de l'app pour utilisation par d'autres fichiers, notamment le serveur Node.
 module.exports = app;
