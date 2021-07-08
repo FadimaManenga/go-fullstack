@@ -24,16 +24,16 @@ Passez au Full stack avec Node.js, Express et MongoDB [OPENCLASSROOMS](https://o
 
 ***
 
-## Ensuite dans pour le FRONTEND
+## Ensuite... le FRONTEND... ouvrez Visual Studio Code dans un dossier **go-fullstack**
 
-1. `git clone` du repo frontend [go-fullstack-fr-frontend](https://github.com/OpenClassrooms-Student-Center/go-fullstack-fr-frontend)
+1. `git clone` du repo **frontend** [go-fullstack-fr-frontend](https://github.com/OpenClassrooms-Student-Center/go-fullstack-fr-frontend)
    > `https://github.com/OpenClassrooms-Student-Center/go-fullstack-fr-frontend.git`
-2. Renomer le dossier **frontend**
+2. Renommer le dossier : **frontend**
 3. `cd frontend`
 4. `npm install`
-5. `ng serve` ou `npm install -g nodemon` puis lancer le server avec `nodemon server` 
+5. `ng serve`  
 
-Veillez à avoir toujours un terminal qui exécute `ng serve`
+Veillez à avoir toujours un terminal qui exécute `ng serve` 
 
 ***
 
