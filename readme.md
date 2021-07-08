@@ -19,7 +19,7 @@ Passez au Full stack avec Node.js, Express et MongoDB [OPENCLASSROOMS](https://o
 
 ## Installation CLI Angular sur **UBUNTU**
   
-1. `ng --version`
+1. `ng --version` version angular
 2. `nodejs --npm`
 3. `sudo npm install -g @angular/cli`
 
