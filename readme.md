@@ -74,9 +74,8 @@ Veillez à avoir toujours un terminal qui exécute `ng serve`
 ***
 ## Archi
 
-|    APIs    	|    are Cool    	|                                         ARCHITECTURE                                         	|   	|
+|    APIs    	|    are Cool    	|                                   ARCHITECTURE go-fullstack                                  	|   	|
 |:----------:	|:--------------:	|:--------------------------------------------------------------------------------------------:	|---	|
-|            	|   go-fullstack 	| dans Visual Studio Code                                                                      	|   	|
 |            	|                	|                                                                                              	|   	|
 |   backend  	| ./controllers  	| stuff.js                                                                                     	|   	|
 |            	|                	| user.js                                                                                      	|   	|
