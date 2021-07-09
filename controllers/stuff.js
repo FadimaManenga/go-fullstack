@@ -3,6 +3,8 @@ const { json } = require("body-parser");
 const Thing = require("../models/Thing");
 const fs = require("fs");
 
+// Les données entrantes sont sous la forme de form-data . Il faut donc utiliser JSON.parse() pour transformer des chaînes de caractères en JSON exploitable.
+
 // Exportations de méthodes pour les routes
 
 exports.createThing = (req, res, next) => {
@@ -51,6 +53,7 @@ exports.deleteThing = (req, res, next) => {
       // extraction du nom du fichier à supprimer
       const filename = thing.imageUrl.split("/images/")[1];
       // supprimer
+      // La fonction unlink permet de supprimer des fichiers du système de fichiers.
       fs.unlink(`images/${filename}`, () => {
         Thing.deleteOne({ _id: req.params.id })
           .then(() => res.status(200).json({ message: "Objet supprimé !" }))

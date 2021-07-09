@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 require("dotenv").config();
 
+
 const stuffRoutes = require("./routes/stuff");
 const userRoutes = require("./routes/user");
 
@@ -21,6 +22,8 @@ mongoose
 const app = express();
 
 // middleware général 1 pour définir les headers de toutes les requetes
+
+// Configurer les bons headers sur l'objet réponse permet l'envoi et la réception de requêtes et de réponses sans erreurs CORS.
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
@@ -35,6 +38,8 @@ app.use((req, res, next) => {
 });
 
 // middleware général 2 qui transforme le corps des requetes en JSON
+
+// Quand une requête HTTP est reçue par le serveur, son corps est rarement sous forme utile. Le package body-parser analyse le corps de la requête et le formate pour en faciliter l'exploitation.
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

@@ -5,6 +5,8 @@ const stuffCtrl = require("../controllers/stuff");
 
 const auth = require("../middleware/auth");
 const multer = require("../middleware/multer-config");
+// Si multer est enregistré avant un middleware d'authentification, tout fichier contenu dans une requête, même non authentifiée, sera enregistré sur le système de fichiers. Il est donc essentiel, dans cette situation, d'enregistrer multer après le middleware d'authentification.
+
 
 /******** Les routes *********/
 
@@ -12,6 +14,7 @@ const multer = require("../middleware/multer-config");
 router.post("/", auth, multer, stuffCtrl.createThing);
 
 // middleware de la route PUT pour modifier une donnée dans la bdd
+// Le package multer a besoin de connaître la destination du fichier ainsi que le nom de fichier souhaité.
 router.put("/:id", auth, multer, stuffCtrl.modifyThing);
 
 //middleware pour supprimer un objet de la bdd
