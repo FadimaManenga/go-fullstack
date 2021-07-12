@@ -14,7 +14,8 @@ const normalizePort = (val) => {
   return false;
 };
 
-const port = normalizePort(process.env.PORT || "3000");
+// déclaré dans .env donc il prend la variable port
+const port = normalizePort(process.env.PORT);
 app.set("port", port);
 
 const errorHandler = (error) => {

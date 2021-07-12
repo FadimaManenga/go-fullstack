@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const path = require("path");
 require("dotenv").config();
 
-
 const stuffRoutes = require("./routes/stuff");
 const userRoutes = require("./routes/user");
 
@@ -25,6 +24,8 @@ const app = express();
 
 // Configurer les bons headers sur l'objet réponse permet l'envoi et la réception de requêtes et de réponses sans erreurs CORS.
 app.use((req, res, next) => {
+  // res.json({ message: 'Votre requête a bien été reçue !' });
+
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Access-Control-Allow-Headers",

@@ -7,7 +7,6 @@ const auth = require("../middleware/auth");
 const multer = require("../middleware/multer-config");
 // Si multer est enregistré avant un middleware d'authentification, tout fichier contenu dans une requête, même non authentifiée, sera enregistré sur le système de fichiers. Il est donc essentiel, dans cette situation, d'enregistrer multer après le middleware d'authentification.
 
-
 /******** Les routes *********/
 
 //middleware de la route post

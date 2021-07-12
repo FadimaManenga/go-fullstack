@@ -7,9 +7,6 @@ Passez au Full stack avec Node.js, Express et MongoDB [OPENCLASSROOMS](https://o
 
 ## Installation Node.js sur **UBUNTU** 
 
-> la version 12 fonctionne en local 
-> la version 16 ne fonctionne pas en global
-
 1. `nodejs -v`
 2. `sudo apt-get install curl`
 3. `curl -sl https://deb.nodesource.com/setup_14.x | sudo -E bash -`
